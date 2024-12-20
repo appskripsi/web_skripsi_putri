@@ -9,15 +9,18 @@ export default {
     ],
     darkMode: "false",
     theme: {
+        container: {
+            center: true,
+        },
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                sans: ["Poppins", "sans-serif"],
             },
         },
     },
     plugins: [require("daisyui")],
     daisyui: {
-        themes: ["cupcake"],
+        themes: ["light"],
         darkTheme: false,
     },
 };
