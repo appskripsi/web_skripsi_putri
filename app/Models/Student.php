@@ -16,7 +16,8 @@ class Student extends User
         'nim',
         'password',
         'academic_id',
-        'jenis_kelamin'
+        'jenis_kelamin',
+        'gender'
     ];
 
     protected $casts = [
