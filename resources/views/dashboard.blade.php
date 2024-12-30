@@ -8,7 +8,8 @@
         <img src="{{ Vite::asset('resources/img/background.png') }}" alt="background"
             class="absolute inset-0 w-full h-full object-cover pointer-events-none">
 
-        <div class="flex flex-col items-center justify-center h-full w-full text-center">
+        <div class="flex flex-col items-center justify-center h-full w-full text-center lg:mt-[-25px] mt-[-30px]">
+            <img src="{{ Vite::asset('resources/img/darmajaya.png') }}" alt="darmajaya-logo" class="lg:w-[200px] w-[150px]">
             <h1 class="lg:text-4xl md:text-4xl text-3xl font-bold mb-4"><span class="text-primary">E</span> Library</h1>
             <span class="lg:text-lg md:text-lg text-sm leading-relaxed max-w-2xl mb-4 max-md:px-4">
                 Merupakan sistem yang dapat digunakan untuk mencari buku yang ada di perpustakaan

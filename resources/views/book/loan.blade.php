@@ -19,7 +19,7 @@
                 </div>
                 <div class="flex flex-col mb-4">
                     <label for="book"
-                        class="font-semibold mb-1 text-sm tracking-wide text-neutral required">Book</label>
+                        class="font-semibold mb-1 text-sm tracking-wide text-neutral required">Academic</label>
                     <input type="text" readonly disabled value="{{ $book->name }}" class="border rounded p-2 text-sm">
                 </div>
                 <div class="flex flex-col mb-4">
