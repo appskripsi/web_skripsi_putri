@@ -37,20 +37,6 @@ class AcademicSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ],
             [
-                'name' => 'Desain Komunikasi Visual',
-                'status' => 1,
-                'faculty_id' => 1,
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now()
-            ],
-            [
-                'name' => 'Desain Interior',
-                'status' => 1,
-                'faculty_id' => 1,
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now()
-            ],
-            [
                 'name' => 'Sains Data',
                 'status' => 1,
                 'faculty_id' => 1,
@@ -87,17 +73,32 @@ class AcademicSeeder extends Seeder
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
+            // Hukum, Bisnis, dan Pariwisata
+            [
+                'name' => 'Desain Komunikasi Visual',
+                'status' => 1,
+                'faculty_id' => 3,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'name' => 'Desain Interior',
+                'status' => 1,
+                'faculty_id' => 3,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
             [
                 'name' => 'Hukum Bisnis',
                 'status' => 1,
-                'faculty_id' => 2,
+                'faculty_id' => 3,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
             [
                 'name' => 'Pariwisata',
                 'status' => 1,
-                'faculty_id' => 2,
+                'faculty_id' => 3,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
