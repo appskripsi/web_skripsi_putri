@@ -47,6 +47,12 @@ class Book extends Model
         });
     }
 
+    public function calculateAvgRating()
+    {
+        return $this->hasMany(BookRating::class, 'book_id')
+            ->avg('rating');
+    }
+
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class, 'category_id');

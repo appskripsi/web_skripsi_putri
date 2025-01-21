@@ -31,9 +31,27 @@
     {{-- e: Hero Section --}}
 
     {{-- s: Book Recomendation --}}
-    @auth
-        {{-- TO DO --}}
-    @endauth
+    @if (count($recommendations) > 0)
+        <section class="bg-slate-50 mt-4">
+            <h4 class="mx-auto text-3xl font-bold text-center py-6">Rekomendasi Buku</h4>
+            <div class="grid lg:grid-cols-4 md:grid-cols-3 md:px-16 lg:px-32 max-md:px-4 gap-4 py-4">
+                @foreach ($recommendations as $recommendation)
+                    <a href="{{ route('book.show', $recommendation['id']) }}"
+                        class="flex p-2 bg-white rounded-md space-x-4 w-full cursor-pointer hover:scale-105 hover:duration-150 hover:transition-all shadow-lg overflow-hidden">
+                        <img src="{{ asset('storage/' . $recommendation['image']) }}" alt="book-cover" class="w-1/2">
+                        <div class="flex flex-col justify-between w-full">
+                            <div class="flex flex-col">
+                                <span class="text-xs font-semibold line-clamp-4 mb-2">{{ $recommendation['name'] }}</span>
+                                <span class="text-xs text-gray-400 line-clamp-2">{{ $recommendation['author'] }}</span>
+                            </div>
+                            <span
+                                class="text-xs text-gray-400 font-medium">{{ $recommendation['created_at']->format('d M Y, H:i') }}</span>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+        </section>
+    @endif
     {{-- e: Book Recomendation --}}
 
     {{-- s: New Book --}}
